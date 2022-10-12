@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="12141" systemVersion="16G29" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="VKMediaAudioEntity" representedClassName="VKMediaAudioEntity" syncable="YES">
+        <attribute name="access_key" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="duration" attributeType="Decimal" defaultValueString="0" syncable="YES"/>
+        <attribute name="genre_id" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="iid" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="is_hq" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="lyrics_id" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="owner_id" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="performer" attributeType="String" syncable="YES"/>
+        <attribute name="title" attributeType="String" syncable="YES"/>
+        <relationship name="playlist" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="VKMMPlaylistEntity" inverseName="audios" inverseEntity="VKMMPlaylistEntity" syncable="YES"/>
+    </entity>
+    <entity name="VKMMPlaylistEntity" representedClassName="VKMMPlaylistEntity" syncable="YES">
+        <attribute name="create_date" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="iid" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="owner_id" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="update_date" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="audios" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="VKMediaAudioEntity" inverseName="playlist" inverseEntity="VKMediaAudioEntity" syncable="YES"/>
+    </entity>
+    <entity name="VKMMUserEntity" representedClassName="VKMMUserEntity" syncable="YES">
+        <attribute name="first_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="iid" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="last_name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="VKMediaAudioEntity" positionX="-171" positionY="26" width="128" height="193"/>
+        <element name="VKMMPlaylistEntity" positionX="72" positionY="-144" width="128" height="133"/>
+        <element name="VKMMUserEntity" positionX="279" positionY="101" width="128" height="88"/>
+    </elements>
+</model>

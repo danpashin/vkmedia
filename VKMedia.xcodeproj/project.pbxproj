@@ -1,0 +1,574 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		A5FBFF121E12E36200A5E21D /* VKMedia Builder */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = A5FBFF131E12E36200A5E21D /* Build configuration list for PBXAggregateTarget "VKMedia Builder" */;
+			buildPhases = (
+				A5FBFF161E12E36800A5E21D /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = "VKMedia Builder";
+			productName = "VKMedia Builder";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		45B3141926EEA78B4D5FFB60 /* libPods-VKMedia Non-Jail.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DD8B20200A089755E3D36540 /* libPods-VKMedia Non-Jail.a */; };
+		A51BAF461F64354100272C3D /* VKMMPlaylistEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = A51BAF3A1F64354100272C3D /* VKMMPlaylistEntity.h */; };
+		A51BAF471F64354100272C3D /* VKMMPlaylistEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = A51BAF3B1F64354100272C3D /* VKMMPlaylistEntity.m */; };
+		A51BAF4A1F64354100272C3D /* VKMediaAudioEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = A51BAF3E1F64354100272C3D /* VKMediaAudioEntity.h */; };
+		A51BAF4B1F64354100272C3D /* VKMediaAudioEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = A51BAF3F1F64354100272C3D /* VKMediaAudioEntity.m */; };
+		A51BAF4E1F64354100272C3D /* VKMMUserEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = A51BAF421F64354100272C3D /* VKMMUserEntity.h */; };
+		A51BAF4F1F64354100272C3D /* VKMMUserEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = A51BAF431F64354100272C3D /* VKMMUserEntity.m */; };
+		A53F82AF1F65599000D28138 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A53F82AE1F65599000D28138 /* SystemConfiguration.framework */; };
+		A54B388B1F6558F500866F07 /* AFNetworkReachabilityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = A54B38891F6558F500866F07 /* AFNetworkReachabilityManager.h */; };
+		A54B388C1F6558F500866F07 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A54B388A1F6558F500866F07 /* AFNetworkReachabilityManager.m */; };
+		A564F1ED1F605EE500530199 /* VKMMMainModel.h in Headers */ = {isa = PBXBuildFile; fileRef = A564F1EB1F605EE500530199 /* VKMMMainModel.h */; };
+		A564F1EE1F605EE500530199 /* VKMMMainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A564F1EC1F605EE500530199 /* VKMMMainModel.m */; };
+		A564F20F1F6069EC00530199 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A58D7A7B1E141BFD00CEEB5E /* CoreData.framework */; };
+		A5723B171F5FB3C6003F4E22 /* VKMMDownloadButton.h in Headers */ = {isa = PBXBuildFile; fileRef = A5723B151F5FB3C6003F4E22 /* VKMMDownloadButton.h */; };
+		A5723B181F5FB3C6003F4E22 /* VKMMDownloadButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A5723B161F5FB3C6003F4E22 /* VKMMDownloadButton.m */; };
+		A58D7A7A1E14175B00CEEB5E /* VKMedia.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A58D7A781E14175B00CEEB5E /* VKMedia.xcdatamodeld */; };
+		A5970AA11F61D55A007A034E /* VKMMAudioModel.h in Headers */ = {isa = PBXBuildFile; fileRef = A5970A9F1F61D55A007A034E /* VKMMAudioModel.h */; };
+		A5970AA21F61D55A007A034E /* VKMMAudioModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A5970AA01F61D55A007A034E /* VKMMAudioModel.m */; };
+		A5AAA65F1F60381300090C48 /* VKMMDownloadController.h in Headers */ = {isa = PBXBuildFile; fileRef = A5AAA65D1F60381300090C48 /* VKMMDownloadController.h */; };
+		A5AAA6601F60381300090C48 /* VKMMDownloadController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5AAA65E1F60381300090C48 /* VKMMDownloadController.m */; };
+		A5FBFF001E12E2D400A5E21D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5FBFEFF1E12E2D400A5E21D /* Foundation.framework */; };
+		A5FBFF1B1E12E3EB00A5E21D /* VKMedia.m in Sources */ = {isa = PBXBuildFile; fileRef = A5FBFF191E12E3EB00A5E21D /* VKMedia.m */; };
+		A5FBFF201E12E40E00A5E21D /* PrefixHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = A5FBFF1F1E12E40E00A5E21D /* PrefixHeader.h */; };
+		A5FBFF271E12E61F00A5E21D /* VKMethods.h in Headers */ = {isa = PBXBuildFile; fileRef = A5FBFF261E12E61F00A5E21D /* VKMethods.h */; };
+		A5FBFF291E12EAEB00A5E21D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5FBFF281E12EAEB00A5E21D /* UIKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9385A3CBCD9F9089B85D7F48 /* Pods-VKMedia Non-Jail.debug_ipa.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VKMedia Non-Jail.debug_ipa.xcconfig"; path = "Pods/Target Support Files/Pods-VKMedia Non-Jail/Pods-VKMedia Non-Jail.debug_ipa.xcconfig"; sourceTree = "<group>"; };
+		A51BAF3A1F64354100272C3D /* VKMMPlaylistEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKMMPlaylistEntity.h; sourceTree = "<group>"; };
+		A51BAF3B1F64354100272C3D /* VKMMPlaylistEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKMMPlaylistEntity.m; sourceTree = "<group>"; };
+		A51BAF3E1F64354100272C3D /* VKMediaAudioEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKMediaAudioEntity.h; sourceTree = "<group>"; };
+		A51BAF3F1F64354100272C3D /* VKMediaAudioEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKMediaAudioEntity.m; sourceTree = "<group>"; };
+		A51BAF421F64354100272C3D /* VKMMUserEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKMMUserEntity.h; sourceTree = "<group>"; };
+		A51BAF431F64354100272C3D /* VKMMUserEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKMMUserEntity.m; sourceTree = "<group>"; };
+		A53F82AE1F65599000D28138 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		A54B38891F6558F500866F07 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		A54B388A1F6558F500866F07 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		A5612F091F80DD4700817BC9 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		A5612F0A1F80DD7F00817BC9 /* CaptainHook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CaptainHook.h; sourceTree = SOURCE_ROOT; };
+		A564F1EB1F605EE500530199 /* VKMMMainModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKMMMainModel.h; sourceTree = "<group>"; };
+		A564F1EC1F605EE500530199 /* VKMMMainModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKMMMainModel.m; sourceTree = "<group>"; };
+		A5723B151F5FB3C6003F4E22 /* VKMMDownloadButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKMMDownloadButton.h; sourceTree = "<group>"; };
+		A5723B161F5FB3C6003F4E22 /* VKMMDownloadButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKMMDownloadButton.m; sourceTree = "<group>"; };
+		A58D7A791E14175B00CEEB5E /* VKMedia.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VKMedia.xcdatamodel; sourceTree = "<group>"; };
+		A58D7A7B1E141BFD00CEEB5E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		A5970A9F1F61D55A007A034E /* VKMMAudioModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKMMAudioModel.h; sourceTree = "<group>"; };
+		A5970AA01F61D55A007A034E /* VKMMAudioModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKMMAudioModel.m; sourceTree = "<group>"; };
+		A5AAA65D1F60381300090C48 /* VKMMDownloadController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKMMDownloadController.h; sourceTree = "<group>"; };
+		A5AAA65E1F60381300090C48 /* VKMMDownloadController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKMMDownloadController.m; sourceTree = "<group>"; };
+		A5FBFEFC1E12E2D400A5E21D /* VKMedia Non-Jail.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; name = "VKMedia Non-Jail.dylib"; path = VKMedia.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5FBFEFF1E12E2D400A5E21D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A5FBFF191E12E3EB00A5E21D /* VKMedia.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKMedia.m; sourceTree = "<group>"; };
+		A5FBFF1F1E12E40E00A5E21D /* PrefixHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.h; sourceTree = SOURCE_ROOT; };
+		A5FBFF211E12E41500A5E21D /* build.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = build.sh; sourceTree = SOURCE_ROOT; };
+		A5FBFF261E12E61F00A5E21D /* VKMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKMethods.h; sourceTree = "<group>"; };
+		A5FBFF281E12EAEB00A5E21D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D7BC30931B5E4731E978A328 /* Pods-VKMedia Non-Jail.release_deb.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VKMedia Non-Jail.release_deb.xcconfig"; path = "Pods/Target Support Files/Pods-VKMedia Non-Jail/Pods-VKMedia Non-Jail.release_deb.xcconfig"; sourceTree = "<group>"; };
+		DD8B20200A089755E3D36540 /* libPods-VKMedia Non-Jail.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VKMedia Non-Jail.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE73F0464DD6078A8480B3FA /* Pods-VKMedia Non-Jail.release_ipa.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VKMedia Non-Jail.release_ipa.xcconfig"; path = "Pods/Target Support Files/Pods-VKMedia Non-Jail/Pods-VKMedia Non-Jail.release_ipa.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A5FBFEF81E12E2D400A5E21D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A53F82AF1F65599000D28138 /* SystemConfiguration.framework in Frameworks */,
+				A564F20F1F6069EC00530199 /* CoreData.framework in Frameworks */,
+				A5FBFF291E12EAEB00A5E21D /* UIKit.framework in Frameworks */,
+				A5FBFF001E12E2D400A5E21D /* Foundation.framework in Frameworks */,
+				45B3141926EEA78B4D5FFB60 /* libPods-VKMedia Non-Jail.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8A63D1A7F65B85E336DF550A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D7BC30931B5E4731E978A328 /* Pods-VKMedia Non-Jail.release_deb.xcconfig */,
+				EE73F0464DD6078A8480B3FA /* Pods-VKMedia Non-Jail.release_ipa.xcconfig */,
+				9385A3CBCD9F9089B85D7F48 /* Pods-VKMedia Non-Jail.debug_ipa.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A58D7A731E14173E00CEEB5E /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				A51BAF3A1F64354100272C3D /* VKMMPlaylistEntity.h */,
+				A51BAF3B1F64354100272C3D /* VKMMPlaylistEntity.m */,
+				A51BAF3E1F64354100272C3D /* VKMediaAudioEntity.h */,
+				A51BAF3F1F64354100272C3D /* VKMediaAudioEntity.m */,
+				A51BAF421F64354100272C3D /* VKMMUserEntity.h */,
+				A51BAF431F64354100272C3D /* VKMMUserEntity.m */,
+				A58D7A781E14175B00CEEB5E /* VKMedia.xcdatamodeld */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+		A5970AA31F61E1DF007A034E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A564F1EB1F605EE500530199 /* VKMMMainModel.h */,
+				A564F1EC1F605EE500530199 /* VKMMMainModel.m */,
+				A5970A9F1F61D55A007A034E /* VKMMAudioModel.h */,
+				A5970AA01F61D55A007A034E /* VKMMAudioModel.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		A5FBFEF01E12E2A600A5E21D = {
+			isa = PBXGroup;
+			children = (
+				A5FBFF181E12E3EB00A5E21D /* VKMedia */,
+				A5FBFEFE1E12E2D400A5E21D /* Frameworks */,
+				A5FBFEFD1E12E2D400A5E21D /* Products */,
+				8A63D1A7F65B85E336DF550A /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		A5FBFEFD1E12E2D400A5E21D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A5FBFEFC1E12E2D400A5E21D /* VKMedia Non-Jail.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A5FBFEFE1E12E2D400A5E21D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A53F82AE1F65599000D28138 /* SystemConfiguration.framework */,
+				A58D7A7B1E141BFD00CEEB5E /* CoreData.framework */,
+				A5FBFF281E12EAEB00A5E21D /* UIKit.framework */,
+				A5FBFEFF1E12E2D400A5E21D /* Foundation.framework */,
+				DD8B20200A089755E3D36540 /* libPods-VKMedia Non-Jail.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A5FBFF181E12E3EB00A5E21D /* VKMedia */ = {
+			isa = PBXGroup;
+			children = (
+				A5FBFF1F1E12E40E00A5E21D /* PrefixHeader.h */,
+				A5FBFF191E12E3EB00A5E21D /* VKMedia.m */,
+				A5723B151F5FB3C6003F4E22 /* VKMMDownloadButton.h */,
+				A5723B161F5FB3C6003F4E22 /* VKMMDownloadButton.m */,
+				A5AAA65D1F60381300090C48 /* VKMMDownloadController.h */,
+				A5AAA65E1F60381300090C48 /* VKMMDownloadController.m */,
+				A5970AA31F61E1DF007A034E /* Models */,
+				A58D7A731E14173E00CEEB5E /* Entities */,
+				A5FBFF1E1E12E40000A5E21D /* Supporting Files */,
+			);
+			path = VKMedia;
+			sourceTree = "<group>";
+		};
+		A5FBFF1E1E12E40000A5E21D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A54B38891F6558F500866F07 /* AFNetworkReachabilityManager.h */,
+				A54B388A1F6558F500866F07 /* AFNetworkReachabilityManager.m */,
+				A5FBFF261E12E61F00A5E21D /* VKMethods.h */,
+				A5612F0A1F80DD7F00817BC9 /* CaptainHook.h */,
+				A5FBFF211E12E41500A5E21D /* build.sh */,
+				A5612F091F80DD4700817BC9 /* README.md */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A5FBFEF91E12E2D400A5E21D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5AAA65F1F60381300090C48 /* VKMMDownloadController.h in Headers */,
+				A5FBFF271E12E61F00A5E21D /* VKMethods.h in Headers */,
+				A5970AA11F61D55A007A034E /* VKMMAudioModel.h in Headers */,
+				A51BAF4E1F64354100272C3D /* VKMMUserEntity.h in Headers */,
+				A51BAF4A1F64354100272C3D /* VKMediaAudioEntity.h in Headers */,
+				A51BAF461F64354100272C3D /* VKMMPlaylistEntity.h in Headers */,
+				A5723B171F5FB3C6003F4E22 /* VKMMDownloadButton.h in Headers */,
+				A54B388B1F6558F500866F07 /* AFNetworkReachabilityManager.h in Headers */,
+				A564F1ED1F605EE500530199 /* VKMMMainModel.h in Headers */,
+				A5FBFF201E12E40E00A5E21D /* PrefixHeader.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		A5FBFEFB1E12E2D400A5E21D /* VKMedia Non-Jail */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5FBFF0F1E12E2D400A5E21D /* Build configuration list for PBXNativeTarget "VKMedia Non-Jail" */;
+			buildPhases = (
+				AD39124B89F8DAAFDF079AE2 /* [CP] Check Pods Manifest.lock */,
+				A5FBFEF71E12E2D400A5E21D /* Sources */,
+				A5FBFEF81E12E2D400A5E21D /* Frameworks */,
+				A5FBFEF91E12E2D400A5E21D /* Headers */,
+				055F7751892C4FAAFE4527CF /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "VKMedia Non-Jail";
+			productName = "VKMedia Non-Jail";
+			productReference = A5FBFEFC1E12E2D400A5E21D /* VKMedia Non-Jail.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A5FBFEF11E12E2A600A5E21D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = VKMM;
+				LastUpgradeCheck = 0900;
+				TargetAttributes = {
+					A5FBFEFB1E12E2D400A5E21D = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = VW97WHTS78;
+						ProvisioningStyle = Automatic;
+					};
+					A5FBFF121E12E36200A5E21D = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = VW97WHTS78;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A5FBFEF41E12E2A600A5E21D /* Build configuration list for PBXProject "VKMedia" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A5FBFEF01E12E2A600A5E21D;
+			productRefGroup = A5FBFEFD1E12E2D400A5E21D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A5FBFEFB1E12E2D400A5E21D /* VKMedia Non-Jail */,
+				A5FBFF121E12E36200A5E21D /* VKMedia Builder */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		055F7751892C4FAAFE4527CF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VKMedia Non-Jail/Pods-VKMedia Non-Jail-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A5FBFF161E12E36800A5E21D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = "/bin/sh ${PROJECT_DIR}/build.sh";
+			shellScript = "";
+			showEnvVarsInLog = 0;
+		};
+		AD39124B89F8DAAFDF079AE2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VKMedia Non-Jail-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A5FBFEF71E12E2D400A5E21D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5FBFF1B1E12E3EB00A5E21D /* VKMedia.m in Sources */,
+				A51BAF4B1F64354100272C3D /* VKMediaAudioEntity.m in Sources */,
+				A54B388C1F6558F500866F07 /* AFNetworkReachabilityManager.m in Sources */,
+				A5970AA21F61D55A007A034E /* VKMMAudioModel.m in Sources */,
+				A58D7A7A1E14175B00CEEB5E /* VKMedia.xcdatamodeld in Sources */,
+				A564F1EE1F605EE500530199 /* VKMMMainModel.m in Sources */,
+				A51BAF4F1F64354100272C3D /* VKMMUserEntity.m in Sources */,
+				A5723B181F5FB3C6003F4E22 /* VKMMDownloadButton.m in Sources */,
+				A5AAA6601F60381300090C48 /* VKMMDownloadController.m in Sources */,
+				A51BAF471F64354100272C3D /* VKMMPlaylistEntity.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A5B0FA4B1F631086001FA184 /* Debug_IPA */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = NO;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = ENABLE_DEBUG;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = VKMedia;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = iphoneos;
+				VALID_ARCHS = "arm64 armv7";
+			};
+			name = Debug_IPA;
+		};
+		A5B0FA4C1F631086001FA184 /* Debug_IPA */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9385A3CBCD9F9089B85D7F48 /* Pods-VKMedia Non-Jail.debug_ipa.xcconfig */;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+					"$(PROJECT_DIR)/VKMedia",
+				);
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+			};
+			name = Debug_IPA;
+		};
+		A5B0FA4D1F631086001FA184 /* Debug_IPA */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = VW97WHTS78;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug_IPA;
+		};
+		A5FBFEF51E12E2A600A5E21D /* Release_DEB */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = NO;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = VKMedia;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = iphoneos;
+				VALID_ARCHS = "arm64 armv7";
+			};
+			name = Release_DEB;
+		};
+		A5FBFEF61E12E2A600A5E21D /* Release_IPA */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = NO;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = VKMedia;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = iphoneos;
+				VALID_ARCHS = "arm64 armv7";
+			};
+			name = Release_IPA;
+		};
+		A5FBFF101E12E2D400A5E21D /* Release_DEB */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7BC30931B5E4731E978A328 /* Pods-VKMedia Non-Jail.release_deb.xcconfig */;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+					"$(PROJECT_DIR)/VKMedia",
+				);
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+			};
+			name = Release_DEB;
+		};
+		A5FBFF111E12E2D400A5E21D /* Release_IPA */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE73F0464DD6078A8480B3FA /* Pods-VKMedia Non-Jail.release_ipa.xcconfig */;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+					"$(PROJECT_DIR)/VKMedia",
+				);
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+			};
+			name = Release_IPA;
+		};
+		A5FBFF141E12E36200A5E21D /* Release_DEB */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = VW97WHTS78;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release_DEB;
+		};
+		A5FBFF151E12E36200A5E21D /* Release_IPA */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = VW97WHTS78;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release_IPA;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A5FBFEF41E12E2A600A5E21D /* Build configuration list for PBXProject "VKMedia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5FBFEF51E12E2A600A5E21D /* Release_DEB */,
+				A5FBFEF61E12E2A600A5E21D /* Release_IPA */,
+				A5B0FA4B1F631086001FA184 /* Debug_IPA */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release_IPA;
+		};
+		A5FBFF0F1E12E2D400A5E21D /* Build configuration list for PBXNativeTarget "VKMedia Non-Jail" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5FBFF101E12E2D400A5E21D /* Release_DEB */,
+				A5FBFF111E12E2D400A5E21D /* Release_IPA */,
+				A5B0FA4C1F631086001FA184 /* Debug_IPA */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release_IPA;
+		};
+		A5FBFF131E12E36200A5E21D /* Build configuration list for PBXAggregateTarget "VKMedia Builder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5FBFF141E12E36200A5E21D /* Release_DEB */,
+				A5FBFF151E12E36200A5E21D /* Release_IPA */,
+				A5B0FA4D1F631086001FA184 /* Debug_IPA */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release_IPA;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A58D7A781E14175B00CEEB5E /* VKMedia.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A58D7A791E14175B00CEEB5E /* VKMedia.xcdatamodel */,
+			);
+			currentVersion = A58D7A791E14175B00CEEB5E /* VKMedia.xcdatamodel */;
+			path = VKMedia.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A5FBFEF11E12E2A600A5E21D /* Project object */;
+}
